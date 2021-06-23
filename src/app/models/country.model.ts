@@ -1,3 +1,6 @@
 export interface Country {}
 
-export interface CountryView {}
+export interface CountryView {
+  name: string;
+  code: string;
+}
