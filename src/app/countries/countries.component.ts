@@ -10,4 +10,8 @@ import { CountryView } from '../models/country.model';
 })
 export class CountriesComponent {
   @Input() countries: CountryView[];
+
+  countryByCode(index: number, country: CountryView): string {
+    return country.code;
+  }
 }

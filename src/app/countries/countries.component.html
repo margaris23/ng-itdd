@@ -1,5 +1,5 @@
 <ul class="countries">
-  <li *ngFor="let country of countries">
+  <li *ngFor="let country of countries; trackBy: countryByCode">
     <img [src]="country.flag" [attr.alt]="country.name" class="flag">
     {{ country.name }} ({{ country.code }})
   </li>
