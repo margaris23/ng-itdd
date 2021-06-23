@@ -4,6 +4,7 @@ export function toCountriesView(countries: Country[] | null): CountryView[] {
   const toCountryView = (country: Country): CountryView => ({
     name: country.name,
     code: country.alpha2Code,
+    flag: `https://www.countryflags.io/${country.alpha2Code}/flat/64.png`
   });
   return countries?.map(toCountryView);
 }
