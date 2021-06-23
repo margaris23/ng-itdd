@@ -1,16 +1,20 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
-import { Country } from './countries/country.model';
+import { Country } from './models/country.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CountryService {
-  constructor() {}
+  private api = 'https://restcountries.eu/rest/v2';
+
+  constructor(private http: HttpClient) {}
 
   list(): Observable<Country[]> {
-    return of([]);
+    const url = `${this.api}/all`;
+    return this.http.get<Country[]>(url);
   }
 }

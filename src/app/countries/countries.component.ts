@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
-import { Country } from './country.model';
+import { Country } from '../models/country.model';
 
 @Component({
   selector: 'app-countries',

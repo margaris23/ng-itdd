@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Observable } from 'rxjs';
 
-import { Country } from './countries/country.model';
 import { CountryService } from './country.service';
+import { Country } from './models/country.model';
 
 @Component({
   selector: 'app-root',
