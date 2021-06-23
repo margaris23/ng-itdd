@@ -1,4 +1,6 @@
 <ul>
-  <li *ngFor="let country of countries">{{ country }}</li>
+  <li *ngFor="let country of countries">
+    {{ country.name }} ({{ country.code }})
+  </li>
   <li *ngIf="!countries?.length">No Countries found</li>
 </ul>
