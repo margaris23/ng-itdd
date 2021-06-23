@@ -1,6 +1,6 @@
-<ul>
+<ul class="countries">
   <li *ngFor="let country of countries">
-    <img [src]="country.flag" [attr.alt]="country.name">
+    <img [src]="country.flag" [attr.alt]="country.name" class="flag">
     {{ country.name }} ({{ country.code }})
   </li>
   <li *ngIf="!countries?.length">No Countries found</li>
