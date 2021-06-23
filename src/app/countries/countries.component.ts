@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 import { Country } from './country.model';
 
@@ -6,6 +6,7 @@ import { Country } from './country.model';
   selector: 'app-countries',
   templateUrl: './countries.component.html',
   styleUrls: ['./countries.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CountriesComponent {
   @Input() countries: Country[];
