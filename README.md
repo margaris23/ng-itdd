@@ -1,3 +1,1 @@
-ng new ng-itdd
-ng g c countries
-ng g s country
+Incremnental Type Driven Development in Angular
